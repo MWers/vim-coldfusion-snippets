@@ -1,0 +1,1654 @@
+snippet abs "gen-abs"
+abs(${1:${2:number}})
+endsnippet
+
+snippet acos "gen-acos"
+acos(${1:${2:number}})
+endsnippet
+
+snippet arrayappend "gen-arrayappend"
+arrayAppend(${1:${2:array}, ${3:value}})
+endsnippet
+
+snippet arrayavg "gen-arrayavg"
+arrayAvg(${1:${2:array}})
+endsnippet
+
+snippet arrayclear "gen-arrayclear"
+arrayclear(${1:${2:array}})
+endsnippet
+
+snippet arraydeleteat "gen-arraydeleteat"
+arrayDeleteAt(${1:${2:array}, ${3:position}})
+endsnippet
+
+snippet arrayinsertat "gen-arrayinsertat"
+arrayInsertAt(${1:${2:array}, ${3:position}, ${4:value}})
+endsnippet
+
+snippet arrayisempty "gen-arrayisempty"
+arrayIsEmpty(${1:${2:array}})
+endsnippet
+
+snippet arraylen "gen-arraylen"
+arrayLen(${1:${2:array}})
+endsnippet
+
+snippet arraymax "gen-arraymax"
+arraymax(${1:${2:array}})
+endsnippet
+
+snippet arraymin "gen-arraymin"
+arraymin(${1:${2:array}})
+endsnippet
+
+snippet arraynew "gen-arraynew"
+arrayNew(${1:${2:dimension}})
+endsnippet
+
+snippet arrayprepend "gen-arrayprepend"
+arrayprepend(${1:${2:array}, ${3:value}})
+endsnippet
+
+snippet arrayresize "gen-arrayresize"
+arrayresize(${1:${2:array}, ${3:size}})
+endsnippet
+
+snippet arrayset "gen-arrayset"
+arrayset(${1:${2:array}, ${3:start_pos}, ${4:end_pos}, ${5:value}})
+endsnippet
+
+snippet arraysort "gen-arraysort"
+arraySort(${1:${2:array}, "${3:sort_type}"${4:, [sort_order]}})
+endsnippet
+
+snippet arraysum "gen-arraysum"
+arraysum(${1:${2:array}})
+endsnippet
+
+snippet arrayswap "gen-arrayswap"
+arrayswap(${1:${2:array}, ${3:position1}, ${4:position2}})
+endsnippet
+
+snippet arraytolist "gen-arraytolist"
+arrayToList(${1:${2:array}${3:, [delimiter]}})
+endsnippet
+
+snippet asc "gen-asc"
+asc(${1:"${2:string}"})
+endsnippet
+
+snippet asin "gen-asin"
+asin(${1:${2:number}})
+endsnippet
+
+snippet atn "gen-atn"
+atn(${1:${2:number}})
+endsnippet
+
+snippet binarydecode "gen-binarydecode"
+binarydecode(${1:"${2:string}", "${3:binaryencoding}"})
+endsnippet
+
+snippet binaryencode "gen-binaryencode"
+binaryencode(${1:${2:binarydata}, "${3:encoding}"})
+endsnippet
+
+snippet bitand "gen-bitand"
+bitand(${1:${2:number1}, ${3:number2}})
+endsnippet
+
+snippet bitmaskclear "gen-bitmaskclear"
+bitmaskclear(${1:${2:number}, ${3:start}, ${4:length}})
+endsnippet
+
+snippet bitmaskread "gen-bitmaskread"
+bitmaskread(${1:${2:number}, ${3:start}, ${4:length}})
+endsnippet
+
+snippet bitmaskset "gen-bitmaskset"
+bitmaskset(${1:${2:number}, ${3:mask}, ${4:start}, ${5:length}})
+endsnippet
+
+snippet bitnot "gen-bitnot"
+bitnot(${1:${2:number}})
+endsnippet
+
+snippet bitor "gen-bitor"
+bitor(${1:${2:number1}, ${3:number2}})
+endsnippet
+
+snippet bitshln "gen-bitshln"
+bitshln(${1:${2:number}, ${3:count}})
+endsnippet
+
+snippet bitshrn "gen-bitshrn"
+bitshrn(${1:${2:number}, ${3:count}})
+endsnippet
+
+snippet bitxor "gen-bitxor"
+bitxor(${1:${2:number1}, ${3:number2}})
+endsnippet
+
+snippet ceiling "gen-ceiling"
+ceiling(${1:${2:number}})
+endsnippet
+
+snippet cfabort "gen-cfabort"
+<cfabort ${1:${2:showerror="$3"}} />$0
+endsnippet
+
+snippet cfapplet "gen-cfapplet"
+<cfapplet ${1:${2:appletsource="$3" }${4:name="$5" }${6:height="$7" }${8:width="$9" }${10:vspace="$11" }${12:hspace="$13" }${14:align="$15" }${16:notsupported="$17"}} />$0
+endsnippet
+
+snippet cfapplication "gen-cfapplication"
+<cfapplication ${1:${2:name="$3" }${4:loginstorage="$5" }${6:clientmanagement="$7" }${8:clientstorage="$9" }${10:setclientcookies="$11" }${12:sessionmanagement="$13" }${14:sessiontimeout="$15" }${16:applicationtimeout="$17" }${18:setdomaincookies="$19" }${20:scriptprotect="$21"}} />$0
+endsnippet
+
+snippet cfargument "gen-cfargument"
+<cfargument ${1:${2:name="$3" }${4:type="$5" }${6:required="$7" }${8:default="$9" }${10:displayname="$11" }${12:hint="$13"}} />$0
+endsnippet
+
+snippet cfassociate "gen-cfassociate"
+<cfassociate ${1:${2:basetag="$3" }${4:datacollection="$5"}} />$0
+endsnippet
+
+snippet cfbreak "gen-cfbreak"
+<cfbreak ${1:} />$0
+endsnippet
+
+snippet cfcache "gen-cfcache"
+<cfcache ${1:${2:action="$3" }${4:directory="$5" }${6:timespan="$7" }${8:expireurl="$9" }${10:username="$11" }${12:password="$13" }${14:port="$15" }${16:protocol="$17"}} />$0
+endsnippet
+
+snippet cfcalendar "gen-cfcalendar"
+<cfcalendar ${1:${2:name="$3" }${4:height="$5" }${6:width="$7" }${8:selecteddate="$9" }${10:startrange="$11" }${12:endrange="$13" }${14:disabled="$15" }${16:mask="$17" }${18:firstdayofweek="$19" }${20:daynames="$21" }${22:monthnames="$23" }${24:style="$25" }${26:onchange="$27"}} />$0
+endsnippet
+
+snippet cfcase "gen-cfcase"
+<cfcase ${1:${2:value="$3" }${4:delimiters="$5"}}>
+	$0
+</cfcase>
+endsnippet
+
+snippet cfcatch "gen-cfcatch"
+<cfcatch ${1:${2:type="$3"}}>
+	$0
+</cfcatch>
+endsnippet
+
+snippet cfchart "gen-cfchart"
+<cfchart ${1:${2:format="$3" }${4:chartheight="$5" }${6:chartwidth="$7" }${8:scalefrom="$9" }${10:scaleto="$11" }${12:showxgridlines="$13" }${14:showygridlines="$15" }${16:gridlines="$17" }${18:seriesplacement="$19" }${20:foregroundcolor="$21" }${22:backgroundcolor="$23" }${24:databackgroundcolor="$25" }${26:showborder="$27" }${28:font="$29" }${30:fontsize="$31" }${32:fontitalic="$33" }${34:fontbold="$35" }${36:labelformat="$37" }${38:xaxistitle="$39" }${40:yaxistitle="$41" }${42:xaxistype="$43" }${44:yaxistype="$45" }${46:sortxaxis="$47" }${48:show3d="$49" }${50:xoffset="$51" }${52:yoffset="$53" }${54:rotated="$55" }${56:showlegend="$57" }${58:tipstyle="$59" }${60:tipbgcolor="$61" }${62:showmarkers="$63" }${64:markersize="$65" }${66:pieslicestyle="$67" }${68:url="$69" }${70:name="$71" }${72:style="$73" }${74:title="$75"}}>
+	$0
+</cfchart>
+endsnippet
+
+snippet cfchartdata "gen-cfchartdata"
+<cfchartdata ${1:${2:item="$3" }${4:value="$5"}} />$0
+endsnippet
+
+snippet cfchartseries "gen-cfchartseries"
+<cfchartseries ${1:${2:type="$3" }${4:query="$5" }${6:itemcolumn="$7" }${8:valuecolumn="$9" }${10:serieslabel="$11" }${12:seriescolor="$13" }${14:paintstyle="$15" }${16:markerstyle="$17" }${18:colorlist="$19" }${20:datalabelstyle="$21"}}>
+	$0
+</cfchartseries>
+endsnippet
+
+snippet cfcol "gen-cfcol"
+<cfcol ${1:${2:header="$3" }${4:width="$5" }${6:align="$7" }${8:text="$9"}} />$0
+endsnippet
+
+snippet cfcollection "gen-cfcollection"
+<cfcollection ${1:${2:action="$3" }${4:collection="$5" }${6:path="$7" }${8:language="$9" }${10:name="$11" }${12:categories="$13"}} />$0
+endsnippet
+
+snippet cfcomponent "gen-cfcomponent"
+<cfcomponent ${1:${2:extends="$3" }${4:output="$5" }${6:displayname="$7" }${8:hint="$9" }${10:name="$11" }${12:style="$13" }${14:namespace="$15" }${16:serviceportname="$17" }${18:porttypename="$19" }${20:bindingname="$21" }${22:wsdlfile="$23"}}>
+	$0
+</cfcomponent>
+endsnippet
+
+snippet cfcontent "gen-cfcontent"
+<cfcontent ${1:${2:type="$3" }${4:deletefile="$5" }${6:file="$7" }${8:reset="$9"}} />$0
+endsnippet
+
+snippet cfcookie "gen-cfcookie"
+<cfcookie ${1:${2:name="$3" }${4:value="$5" }${6:expires="$7" }${8:secure="$9" }${10:path="$11" }${12:domain="$13"}} />$0
+endsnippet
+
+snippet cfdefaultcase "gen-cfdefaultcase"
+<cfdefaultcase ${1:}>
+	$0
+</cfdefaultcase>
+endsnippet
+
+snippet cfdirectory "gen-cfdirectory"
+<cfdirectory ${1:${2:action="$3" }${4:directory="$5" }${6:name="$7" }${8:filter="$9" }${10:mode="$11" }${12:sort="$13" }${14:newdirectory="$15" }${16:recurse="$17"}} />$0
+endsnippet
+
+snippet cfdocument "gen-cfdocument"
+<cfdocument ${1:${2:format="$3" }${4:filename="$5" }${6:overwrite="$7" }${8:name="$9" }${10:pagetype="$11" }${12:pageheight="$13" }${14:pagewidth="$15" }${16:orientation="$17" }${18:margintop="$19" }${20:marginbottom="$21" }${22:marginleft="$23" }${24:marginright="$25" }${26:unit="$27" }${28:encryption="$29" }${30:ownerpassword="$31" }${32:userpassword="$33" }${34:permissions="$35" }${36:fontembed="$37" }${38:backgroundvisible="$39" }${40:scale="$41"}}>
+	$0
+</cfdocument>
+endsnippet
+
+snippet cfdocumentitem "gen-cfdocumentitem"
+<cfdocumentitem ${1:${2:type="$3"}}>
+	$0
+</cfdocumentitem>
+endsnippet
+
+snippet cfdocumentsection "gen-cfdocumentsection"
+<cfdocumentsection ${1:${2:margintop="$3" }${4:marginbottom="$5" }${6:marginleft="$7" }${8:marginright="$9"}}>
+	$0
+</cfdocumentsection>
+endsnippet
+
+snippet cfdump "gen-cfdump"
+<cfdump ${1:${2:var="#$3#" }${4:expand="${5:true}" }${6:label="$7"}} />$0
+endsnippet
+
+snippet cfelse "gen-cfelse"
+<cfelse ${1:} />$0
+endsnippet
+
+snippet cfelseif "gen-cfelseif"
+<cfelseif ${1:} />$0
+endsnippet
+
+snippet cferror "gen-cferror"
+<cferror ${1:${2:type="$3" }${4:template="$5" }${6:mailto="$7" }${8:exception="$9"}} />$0
+endsnippet
+
+snippet cfexecute "gen-cfexecute"
+<cfexecute ${1:${2:name="$3" }${4:arguments="$5" }${6:outputfile="$7" }${8:variable="$9" }${10:timeout="$11"}}>
+	$0
+</cfexecute>
+endsnippet
+
+snippet cfexit "gen-cfexit"
+<cfexit ${1:${2:method="$3"}} />$0
+endsnippet
+
+snippet cffile "gen-cffile"
+<cffile ${1:${2:action="$3" }${4:file="$5" }${6:mode="$7" }${8:output="$9" }${10:addnewline="$11" }${12:attributes="$13" }${14:charset="$15" }${16:source="$17" }${18:destination="$19" }${20:variable="$21" }${22:filefield="$23" }${24:nameconflict="$25" }${26:accept="$27" }${28:result="$29"}} />$0
+endsnippet
+
+snippet cfflush "gen-cfflush"
+<cfflush ${1:${2:interval="$3"}} />$0
+endsnippet
+
+snippet cfform "gen-cfform"
+<cfform ${1:${2:name="$3" }${4:action="$5" }${6:method="$7" }${8:format="$9" }${10:skin="$11" }${12:style="$13" }${14:preservedata="$15" }${16:onload="$17" }${18:onreset="$19" }${20:onsubmit="$21" }${22:codebase="$23" }${24:archive="$25" }${26:height="$27" }${28:width="$29" }${30:onerror="$31" }${32:wmode="$33" }${34:accessible="$35" }${36:preloader="$37" }${38:timeout="$39" }${40:enctype="$41" }${42:id="$43" }${44:scriptsrc="$45" }${46:target="$47" }${48:class="$49" }${50:passthrough="$51"}}>
+	$0
+</cfform>
+endsnippet
+
+snippet cfformgroup "gen-cfformgroup"
+<cfformgroup ${1:${2:type="$3" }${4:query="$5" }${6:startrow="$7" }${8:maxrows="$9" }${10:label="$11" }${12:style="$13" }${14:selectedindex="$15" }${16:width="$17" }${18:height="$19" }${20:enabled="$21" }${22:visible="$23" }${24:onchange="$25" }${26:tooltip="$27"}}>
+	$0
+</cfformgroup>
+endsnippet
+
+snippet cfformitem "gen-cfformitem"
+<cfformitem ${1:${2:type="$3" }${4:style="$5" }${6:width="$7" }${8:height="$9" }${10:enabled="$11" }${12:visible="$13" }${14:tooltip="$15" }${16:bind="$17"}}>
+	$0
+</cfformitem>
+endsnippet
+
+snippet cfftp "gen-cfftp"
+<cfftp ${1:${2:action="$3" }${4:username="$5" }${6:password="$7" }${8:server="$9" }${10:timeout="$11" }${12:port="$13" }${14:connection="$15" }${16:proxyserver="$17" }${18:retrycount="$19" }${20:stoponerror="$21" }${22:passive="$23" }${24:asciiextensionist="$25" }${26:transfermode="$27" }${28:failifexists="$29" }${30:directory="$31" }${32:localfile="$33" }${34:remotefile="$35" }${36:item="$37" }${38:existing="$39" }${40:new="$41" }${42:name="$43" }${44:result="$45"}} />$0
+endsnippet
+
+snippet cffunction "gen-cffunction"
+<cffunction ${1:${2:name="$3" }${4:returntype="$5" }${6:roles="$7" }${8:access="$9" }${10:output="$11" }${12:displayname="$13" }${14:hint="$15" }${16:description="$17"}}>
+	$0
+</cffunction>
+endsnippet
+
+snippet cfgrid "gen-cfgrid"
+<cfgrid ${1:${2:name="$3" }${4:format="$5" }${6:height="$7" }${8:width="$9" }${10:autowidth="$11" }${12:vspace="$13" }${14:hspace="$15" }${16:align="$17" }${18:query="$19" }${20:insert="$21" }${22:delete="$23" }${24:sort="$25" }${26:font="$27" }${28:fontsize="$29" }${30:italic="$31" }${32:bold="$33" }${34:textcolor="$35" }${36:href="$37" }${38:hrefkey="$39" }${40:target="$41" }${42:appendkey="$43" }${44:highlighthref="$45" }${46:onvalidate="$47" }${48:onerror="$49" }${50:griddataalign="$51" }${52:gridlines="$53" }${54:rowheight="$55" }${56:rowheaders="$57" }${58:rowheaderalign="$59" }${60:rowheaderfont="$61" }${62:rowheaderfontsize="$63" }${64:rowheaderitalic="$65" }${66:rowheaderbold="$67" }${68:rowheadertextcolor="$69" }${70:colheaders="$71" }${72:colheaderalign="$73" }${74:colheaderfont="$75" }${76:colheaderfontsize="$77" }${78:colheaderitalic="$79" }${80:colheaderbold="$81" }${82:colheadertextcolor="$83" }${84:bgcolor="$85" }${86:selectcolor="$87" }${88:selectmode="$89" }${90:maxrows="$91" }${92:notsupported="$93" }${94:picturebar="$95" }${96:insertbutton="$97" }${98:deletebutton="$99" }${100:sortascendingbutton="$101" }${102:sortdescendingbutton="$103" }${104:style="$105" }${106:enabled="$107" }${108:visible="$109" }${110:tooltip="$111" }${112:onchange="$113"}}>
+	$0
+</cfgrid>
+endsnippet
+
+snippet cfgridcolumn "gen-cfgridcolumn"
+<cfgridcolumn ${1:${2:name="$3" }${4:header="$5" }${6:width="$7" }${8:font="$9" }${10:fontsize="$11" }${12:italic="$13" }${14:bold="$15" }${16:bgcolor="$17" }${18:textcolor="$19" }${20:href="$21" }${22:hrefkey="$23" }${24:target="$25" }${26:select="$27" }${28:display="$29" }${30:type="$31" }${32:headerfont="$33" }${34:headerfontsize="$35" }${36:headeritalic="$37" }${38:headerbold="$39" }${40:headertextcolor="$41" }${42:dataalign="$43" }${44:headeralign="$45" }${46:numberformat="$47" }${48:values="$49" }${50:valuesdisplay="$51" }${52:valuesdelimiter="$53" }${54:mask="$55"}} />$0
+endsnippet
+
+snippet cfgridrow "gen-cfgridrow"
+<cfgridrow ${1:${2:data="$3"}} />$0
+endsnippet
+
+snippet cfgridupdate "gen-cfgridupdate"
+<cfgridupdate ${1:${2:grid="$3" }${4:datasource="$5" }${6:tablename="$7" }${8:username="$9" }${10:password="$11" }${12:tableowner="$13" }${14:tablequalifier="$15" }${16:keyonly="$17"}} />$0
+endsnippet
+
+snippet cfheader "gen-cfheader"
+<cfheader ${1:${2:name="$3" }${4:value="$5" }${6:charset="$7" }${8:statuscode="$9" }${10:statustext="$11"}} />$0
+endsnippet
+
+snippet cfhtmlhead "gen-cfhtmlhead"
+<cfhtmlhead ${1:${2:text="$3"}} />$0
+endsnippet
+
+snippet cfhttp "gen-cfhttp"
+<cfhttp ${1:${2:url="$3" }${4:port="$5" }${6:method="$7" }${8:proxyserver="$9" }${10:proxyport="$11" }${12:proxyuser="$13" }${14:proxypassword="$15" }${16:username="$17" }${18:password="$19" }${20:useragent="$21" }${22:charset="$23" }${24:resolveurl="$25" }${26:throwonerror="$27" }${28:redirect="$29" }${30:timeout="$31" }${32:getasbinary="$33" }${34:result="$35" }${36:delimiter="$37"}}>
+	$0
+</cfhttp>
+endsnippet
+
+snippet cfhttpparam "gen-cfhttpparam"
+<cfhttpparam ${1:${2:type="$3" }${4:name="$5" }${6:value="$7" }${8:file="$9" }${10:encoded="$11" }${12:mimetype="$13"}} />$0
+endsnippet
+
+snippet cfif "gen-cfif"
+<cfif ${1:}>
+	$0
+</cfif>
+endsnippet
+
+snippet cfimport "gen-cfimport"
+<cfimport ${1:${2:taglib="$3" }${4:prefix="$5"}} />$0
+endsnippet
+
+snippet cfinclude "gen-cfinclude"
+<cfinclude ${1:${2:template="$3"}} />$0
+endsnippet
+
+snippet cfindex "gen-cfindex"
+<cfindex ${1:${2:collection ="$3" }${4:action="$5" }${6:type="$7" }${8:title="$9" }${10:key="$11" }${12:body="$13" }${14:custom1="$15" }${16:custom2="$17" }${18:custom3="$19" }${20:custom4="$21" }${22:urlpath="$23" }${24:extensions="$25" }${26:query="$27" }${28:recurse="$29" }${30:language="$31" }${32:status="$33"}} />$0
+endsnippet
+
+snippet cfinput "gen-cfinput"
+<cfinput ${1:${2:name="$3" }${4:id="$5" }${6:type="$7" }${8:label="$9" }${10:style="$11" }${12:required="$13" }${14:mask="$15" }${16:validate="$17" }${18:validateat="$19" }${20:message="$21" }${22:range="$23" }${24:maxlength="$25" }${26:pattern="$27" }${28:onvalidate="$29" }${30:onerror="$31" }${32:size="$33" }${34:value="$35" }${36:bind="$37" }${38:checked="$39" }${40:disabled="$41" }${42:src="$43" }${44:onkeyup="$45" }${46:onkeydown="$47" }${48:onmouseup="$49" }${50:onmousedown="$51" }${52:onchange="$53" }${54:onclick="$55" }${56:daynames="$57" }${58:firstdayofweek="$59" }${60:monthnames="$61" }${62:enabled="$63" }${64:visible="$65" }${66:tooltip="$67" }${68:width="$69" }${70:height="$71" }${72:passthrough="$73"}} />$0
+endsnippet
+
+snippet cfinsert "gen-cfinsert"
+<cfinsert ${1:${2:datasource="$3" }${4:tablename="$5" }${6:tableowner="$7" }${8:tablequalifier="$9" }${10:username="$11" }${12:password="$13" }${14:formfields="$15"}} />$0
+endsnippet
+
+snippet cfinvoke "gen-cfinvoke"
+<cfinvoke ${1:${2:component="$3" }${4:method="$5" }${6:returnvariable="$7" }${8:argumentcollection="$9" }${10:username="$11" }${12:password="$13" }${14:webservice="$15" }${16:timeout="$17" }${18:proxyserver="$19" }${20:proxyport="$21" }${22:proxyuser="$23" }${24:proxypassword="$25" }${26:serviceport="$27"}}>
+	$0
+</cfinvoke>
+endsnippet
+
+snippet cfinvokeargument "gen-cfinvokeargument"
+<cfinvokeargument ${1:${2:name="$3" }${4:value="$5" }${6:omit="$7"}} />$0
+endsnippet
+
+snippet cfldap "gen-cfldap"
+<cfldap ${1:${2:server="$3" }${4:port="$5" }${6:username="$7" }${8:password="$9" }${10:action="$11" }${12:name="$13" }${14:timeout="$15" }${16:maxrows="$17" }${18:start="$19" }${20:scope="$21" }${22:attributes="$23" }${24:returnasbinary="$25" }${26:filter="$27" }${28:sort="$29" }${30:sortcontrol="$31" }${32:dn="$33" }${34:startrow="$35" }${36:modifytype="$37" }${38:rebind="$39" }${40:referral="$41" }${42:secure="$43" }${44:separator="$45" }${46:delimiter="$47"}} />$0
+endsnippet
+
+snippet cflocation "gen-cflocation"
+<cflocation ${1:${2:url="$3" }${4:addtoken="$5"}} />$0
+endsnippet
+
+snippet cflock "gen-cflock"
+<cflock ${1:${2:timeout="$3" }${4:scope="$5" }${6:name="$7" }${8:throwontimeout="$9" }${10:type="$11"}}>
+	$0
+</cflock>
+endsnippet
+
+snippet cflog "gen-cflog"
+<cflog ${1:${2:text="$3" }${4:log="$5" }${6:file="$7" }${8:type="$9" }${10:application="$11"}} />$0
+endsnippet
+
+snippet cflogin "gen-cflogin"
+<cflogin ${1:${2:idletimeout="$3" }${4:applicationtoken="$5" }${6:cookiedomain="$7"}}>
+	$0
+</cflogin>
+endsnippet
+
+snippet cfloginuser "gen-cfloginuser"
+<cfloginuser ${1:${2:name="$3" }${4:password="$5" }${6:roles="$7"}} />$0
+endsnippet
+
+snippet cflogout "gen-cflogout"
+<cflogout ${1:} />$0
+endsnippet
+
+snippet cfloop "gen-cfloop"
+<cfloop ${1:${2:index="$3" }${4:to="$5" }${6:from="$7" }${8:step="$9" }${10:condition="$11" }${12:query="$13" }${14:startrow="$15" }${16:endrow="$17" }${18:list="$19" }${20:delimiters="$21" }${22:collection="$23" }${24:item="$25"}}>
+	$0
+</cfloop>
+endsnippet
+
+snippet cfmail "gen-cfmail"
+<cfmail ${1:${2:to="$3" }${4:from="$5" }${6:cc="$7" }${8:bcc="$9" }${10:subject="$11" }${12:replyto="$13" }${14:failto="$15" }${16:username="$17" }${18:password="$19" }${20:wraptext="$21" }${22:charset="$23" }${24:type="$25" }${26:mimeattach="$27" }${28:query="$29" }${30:group="$31" }${32:groupcasesensitive="$33" }${34:startrow="$35" }${36:maxrows="$37" }${38:server="$39" }${40:port="$41" }${42:mailerid="$43" }${44:timeout="$45" }${46:spoolenable="$47"}}>
+	$0
+</cfmail>
+endsnippet
+
+snippet cfmailparam "gen-cfmailparam"
+<cfmailparam ${1:${2:file="$3" }${4:type="$5" }${6:name="$7" }${8:value="$9" }${10:contentID="$11" }${12:disposition="$13"}} />$0
+endsnippet
+
+snippet cfmailpart "gen-cfmailpart"
+<cfmailpart ${1:${2:type="$3" }${4:wraptext="$5" }${6:charset="$7"}}>
+	$0
+</cfmailpart>
+endsnippet
+
+snippet cfmodule "gen-cfmodule"
+<cfmodule ${1:${2:template="$3" }${4:name="$5" }${6:attributecollection="$7"}}>
+	$0
+</cfmodule>
+endsnippet
+
+snippet cfNTauthenticate "gen-cfNTauthenticate"
+<cfNTauthenticate ${1:${2:name="$3" }${4:password="$5" }${6:domain="$7" }${8:result="$9" }${10:listgroups="$11" }${12:throwonerror="$13"}} />$0
+endsnippet
+
+snippet cfobject "gen-cfobject"
+<cfobject ${1:${2:type="$3" }${4:action="$5" }${6:class="$7" }${8:name="$9" }${10:context="$11" }${12:server="$13" }${14:component="$15" }${16:locale="$17" }${18:webservice="$19"}} />$0
+endsnippet
+
+snippet cfobjectcache "gen-cfobjectcache"
+<cfobjectcache ${1:${2:action="$3"}}>
+	$0
+</cfobjectcache>
+endsnippet
+
+snippet cfoutput "gen-cfoutput-query"
+<cfoutput query="$1">
+	$0
+</cfoutput>
+endsnippet
+
+snippet cfoutput "gen-cfoutput-singleline"
+<cfoutput>#$0#</cfoutput>
+endsnippet
+
+snippet cfoutput "gen-cfoutput"
+<cfoutput ${1:${2:query="$3" }${4:group="$5" }${6:groupcasesensitive="$7" }${8:startrow="$9" }${10:maxrows="$11"}}>
+	$0
+</cfoutput>
+endsnippet
+
+snippet cfparam "gen-cfparam"
+<cfparam ${1:${2:name="$3" }${4:type="$5" }${6:default="$7" }${8:max="$9" }${10:min="$11" }${12:pattern="$13"}} />$0
+endsnippet
+
+snippet cfpop "gen-cfpop"
+<cfpop ${1:${2:server="$3" }${4:port="$5" }${6:username="$7" }${8:password="$9" }${10:action="$11" }${12:name="$13" }${14:messagenumber="$15" }${16:uid="$17" }${18:attachmentpath="$19" }${20:timeout="$21" }${22:maxrows="$23" }${24:startrow="$25" }${26:generateuniquefilenames="$27"}} />$0
+endsnippet
+
+snippet cfprocessingdirective "gen-cfprocessingdirective"
+<cfprocessingdirective ${1:${2:suppresswhitespace="$3" }${4:pageencoding="$5"}}>
+	$0
+</cfprocessingdirective>
+endsnippet
+
+snippet cfprocparam "gen-cfprocparam"
+<cfprocparam ${1:${2:type="$3" }${4:variable="$5" }${6:value="$7" }${8:cfsqltype="$9" }${10:maxlength="$11" }${12:scale="$13" }${14:null="$15"}} />$0
+endsnippet
+
+snippet cfprocresult "gen-cfprocresult"
+<cfprocresult ${1:${2:name="$3" }${4:resultset="$5" }${6:maxrows="$7"}} />$0
+endsnippet
+
+snippet cfproperty "gen-cfproperty"
+<cfproperty ${1:${2:name="$3" }${4:type="$5" }${6:required="$7" }${8:default="$9" }${10:displayname="$11" }${12:hint="$13"}} />$0
+endsnippet
+
+snippet cfquery "gen-cfquery"
+<cfquery ${1:${2:name="$3" }${4:datasource="$5" }${6:dbtype="$7" }${8:username="$9" }${10:password="$11" }${12:maxrows="$13" }${14:blockfactor="$15" }${16:timeout="$17" }${18:cachedafter="$19" }${20:cachedwithin="$21" }${22:debug="$23" }${24:result="$25"}}>
+	$0
+</cfquery>
+endsnippet
+
+snippet cfqueryparam "gen-cfqueryparam"
+<cfqueryparam ${1:${2:value="$3" }${4:cfsqltype="$5" }${6:maxlength="$7" }${8:scale="$9" }${10:null="$11" }${12:list="$13" }${14:separator="$15"}} />$0
+endsnippet
+
+snippet cfreport "gen-cfreport"
+<cfreport ${1:${2:template="$3" }${4:format="$5" }${6:name="$7" }${8:filename="$9" }${10:query="$11" }${12:overwrite="$13" }${14:encryption="$15" }${16:ownerpassword="$17" }${18:userpassword="$19" }${20:permissions="$21" }${22:datasource="$23" }${24:type="$25" }${26:timeout="$27" }${28:report="$29" }${30:orderby="$31" }${32:username="$33" }${34:password="$35" }${36:formula="$37"}}>
+	$0
+</cfreport>
+endsnippet
+
+snippet cfreportparam "gen-cfreportparam"
+<cfreportparam ${1:${2:name="$3" }${4:value="$5"}} />$0
+endsnippet
+
+snippet cfrethrow "gen-cfrethrow"
+<cfrethrow ${1:} />$0
+endsnippet
+
+snippet cfreturn "gen-cfreturn"
+<cfreturn ${1:} />$0
+endsnippet
+
+snippet cfsavecontent "gen-cfsavecontent"
+<cfsavecontent ${1:${2:variable="$3"}}>
+	$0
+</cfsavecontent>
+endsnippet
+
+snippet cfschedule "gen-cfschedule"
+<cfschedule ${1:${2:action="$3" }${4:task="$5" }${6:operation="$7" }${8:file="$9" }${10:path="$11" }${12:startdate="$13" }${14:starttime="$15" }${16:url="$17" }${18:port="$19" }${20:publish="$21" }${22:enddate="$23" }${24:endtime="$25" }${26:interval="$27" }${28:requesttimeout="$29" }${30:username="$31" }${32:password="$33" }${34:proxyserver="$35" }${36:proxyport="$37" }${38:proxyuser="$39" }${40:proxypassword="$41" }${42:resolveurl="$43"}} />$0
+endsnippet
+
+snippet cfscript "gen-cfscript"
+<cfscript ${1:}>
+	$0
+</cfscript>
+endsnippet
+
+snippet cfsearch "gen-cfsearch"
+<cfsearch ${1:${2:name="$3" }${4:collection="$5" }${6:category="$7" }${8:categorytree="$9" }${10:status="$11" }${12:type="$13" }${14:criteria="$15" }${16:maxrows="$17" }${18:startrow="$19" }${20:suggestions="$21" }${22:contextpassages="$23" }${24:contextbytes="$25" }${26:contexthighlightbegin="$27" }${28:contexthighlightend="$29" }${30:previouscriteria="$31" }${32:language="$33"}} />$0
+endsnippet
+
+snippet cfselect "gen-cfselect"
+<cfselect ${1:${2:name="$3" }${4:id="$5" }${6:label="$7" }${8:style="$9" }${10:size="$11" }${12:required="$13" }${14:message="$15" }${16:onerror="$17" }${18:multiple="$19" }${20:query="$21" }${22:value="$23" }${24:display="$25" }${26:group="$27" }${28:queryposition="$29" }${30:selected="$31" }${32:onkeyup="$33" }${34:onkeydown="$35" }${36:onmouseup="$37" }${38:onmousedown="$39" }${40:onchange="$41" }${42:onclick="$43" }${44:enabled="$45" }${46:visible="$47" }${48:tooltip="$49" }${50:height="$51" }${52:width="$53" }${54:passthrough="$55"}}>
+	$0
+</cfselect>
+endsnippet
+
+snippet cfset "gen-cfset"
+<cfset ${0:} />
+endsnippet
+
+snippet cfsetting "gen-cfsetting"
+<cfsetting ${1:${2:enablecfoutputonly="$3" }${4:showdebugoutput="$5" }${6:requesttimeout="$7"}}>
+	$0
+</cfsetting>
+endsnippet
+
+snippet cfsilent "gen-cfsilent"
+<cfsilent ${1:}>
+	$0
+</cfsilent>
+endsnippet
+
+snippet cfstoredproc "gen-cfstoredproc"
+<cfstoredproc ${1:${2:procedure="$3" }${4:datasource="$5" }${6:username="$7" }${8:password="$9" }${10:blockfactor="$11" }${12:debug="$13" }${14:returncode="$15" }${16:result="$17"}}>
+	$0
+</cfstoredproc>
+endsnippet
+
+snippet cfswitch "gen-cfswitch"
+<cfswitch ${1:${2:expression="$3"}}>
+	$0
+</cfswitch>
+endsnippet
+
+snippet cftable "gen-cftable"
+<cftable ${1:${2:query="$3" }${4:maxrows="$5" }${6:colspacing="$7" }${8:headerlines="$9" }${10:htmltable="$11" }${12:border="$13" }${14:colheaders="$15" }${16:startrow="$17"}}>
+	$0
+</cftable>
+endsnippet
+
+snippet cftextarea "gen-cftextarea"
+<cftextarea ${1:${2:name="$3" }${4:id="$5" }${6:label="$7" }${8:style="$9" }${10:required="$11" }${12:validate="$13" }${14:validateat="$15" }${16:message="$17" }${18:range="$19" }${20:maxlength="$21" }${22:pattern="$23" }${24:onvalidate="$25" }${26:onerror="$27" }${28:disabled="$29" }${30:value="$31" }${32:bind="$33" }${34:onkeyup="$35" }${36:onkeydown="$37" }${38:onmouseup="$39" }${40:onmousedown="$41" }${42:onchange="$43" }${44:onclick="$45" }${46:enabled="$47" }${48:tooltip="$49" }${50:height="$51" }${52:width="$53"}}>
+	$0
+</cftextarea>
+endsnippet
+
+snippet cftextinput "gen-cftextinput"
+<cftextinput ${1:${2:name="$3" }${4:value="$5" }${6:required="$7" }${8:range="$9" }${10:validate="$11" }${12:onvalidate="$13" }${14:pattern="$15" }${16:message="$17" }${18:onerror="$19" }${20:size="$21" }${22:font="$23" }${24:fontsize="$25" }${26:italic="$27" }${28:bold="$29" }${30:height="$31" }${32:width="$33" }${34:vspace="$35" }${36:hspace="$37" }${38:align="$39" }${40:bgcolor="$41" }${42:textcolor="$43" }${44:maxlength="$45" }${46:notsupported="$47"}} />$0
+endsnippet
+
+snippet cfthrow "gen-cfthrow"
+<cfthrow ${1:${2:type="$3" }${4:message="$5" }${6:detail="$7" }${8:errorcode="$9" }${10:extendedinfo="$11" }${12:object="$13"}} />$0
+endsnippet
+
+snippet cftimer "gen-cftimer"
+<cftimer ${1:${2:label="$3" }${4:type="$5"}}>
+	$0
+</cftimer>
+endsnippet
+
+snippet cftrace "gen-cftrace"
+<cftrace ${1:${2:abort="$3" }${4:category="$5" }${6:inline="$7" }${8:text="$9" }${10:type="$11" }${12:var="$13"}}>
+	$0
+</cftrace>
+endsnippet
+
+snippet cftransaction "gen-cftransaction"
+<cftransaction ${1:${2:action="$3" }${4:isolation="$5"}}>
+	$0
+</cftransaction>
+endsnippet
+
+snippet cftree "gen-cftree"
+<cftree ${1:${2:name="$3" }${4:format="$5" }${6:required="$7" }${8:delimiter="$9" }${10:completepath="$11" }${12:appendkey="$13" }${14:highlighthref="$15" }${16:onvalidate="$17" }${18:message="$19" }${20:onerror="$21" }${22:lookandfeel="$23" }${24:font="$25" }${26:fontsize="$27" }${28:italic="$29" }${30:bold="$31" }${32:height="$33" }${34:width="$35" }${36:vspace="$37" }${38:hspace="$39" }${40:align="$41" }${42:border="$43" }${44:hscroll="$45" }${46:vscroll="$47" }${48:style="$49" }${50:enabled="$51" }${52:visible="$53" }${54:tooltip="$55" }${56:onchange="$57" }${58:notsupported="$59"}}>
+	$0
+</cftree>
+endsnippet
+
+snippet cftreeitem "gen-cftreeitem"
+<cftreeitem ${1:${2:value="$3" }${4:display="$5" }${6:parent="$7" }${8:img="$9" }${10:imgopen="$11" }${12:href="$13" }${14:target="$15" }${16:query="$17" }${18:queryAsRoot="$19" }${20:expand="$21"}} />$0
+endsnippet
+
+snippet cftry "gen-cftry"
+<cftry ${1:}>
+	$0
+</cftry>
+endsnippet
+
+snippet cfupdate "gen-cfupdate"
+<cfupdate ${1:${2:datasource="$3" }${4:tablename="$5" }${6:tableowner="$7" }${8:tablequalifier="$9" }${10:username="$11" }${12:password="$13" }${14:formfields="$15"}} />$0
+endsnippet
+
+snippet cfwddx "gen-cfwddx"
+<cfwddx ${1:${2:action="$3" }${4:input="$5" }${6:output="$7" }${8:toplevelvariable="$9" }${10:usetimezoneinfo="$11" }${12:validate="$13"}} />$0
+endsnippet
+
+snippet cfxml "gen-cfxml"
+<cfxml ${1:${2:variable="$3" }${4:casesensitive="$5"}}>
+	$0
+</cfxml>
+endsnippet
+
+snippet charsetdecode "gen-charsetdecode"
+charsetdecode(${1:"${2:string}", "${3:encoding}"})
+endsnippet
+
+snippet charsetencode "gen-charsetencode"
+charsetencode(${1:${2:binaryobject}, "${3:encoding}"})
+endsnippet
+
+snippet chr "gen-chr"
+chr(${1:${2:number}})
+endsnippet
+
+snippet cjustify "gen-cjustify"
+cjustify(${1:"${2:string}", ${3:length}})
+endsnippet
+
+snippet compare "gen-compare"
+compare(${1:"${2:string1}", "${3:string2}"})
+endsnippet
+
+snippet comparenocase "gen-comparenocase"
+comparenocase(${1:"${2:string1}", "${3:string2}"})
+endsnippet
+
+snippet cos "gen-cos"
+cos(${1:${2:number}})
+endsnippet
+
+snippet createdate "gen-createdate"
+createdate(${1:${2:year}, ${3:month}, ${4:day}})
+endsnippet
+
+snippet createdatetime "gen-createdatetime"
+createdatetime(${1:${2:year}, ${3:month}, ${4:day}, ${5:hour}, ${6:minute}, ${7:second}})
+endsnippet
+
+snippet createobject "gen-createobject"
+createObject(${1:"${2:type}", "${3:context}", "${4:class}", "${5:locale}", "${6:servername}", "${7:component_name}", "${8:urltowsdl}"${9:, [portname]}})
+endsnippet
+
+snippet createodbcdate "gen-createodbcdate"
+createODBCDate(${1:${2:date}})
+endsnippet
+
+snippet createodbcdatetime "gen-createodbcdatetime"
+createODBCdatetime(${1:${2:date}})
+endsnippet
+
+snippet createodbctime "gen-createodbctime"
+createODBCtime(${1:${2:date}})
+endsnippet
+
+snippet createtime "gen-createtime"
+createTime(${1:${2:hour}, ${3:minute}, ${4:second}})
+endsnippet
+
+snippet createtimespan "gen-createtimespan"
+createTimeSpan(${1:${2:days}, ${3:hours}, ${4:minutes}, ${5:seconds}})
+endsnippet
+
+snippet createuuid "gen-createuuid"
+createUUID(${1:})
+endsnippet
+
+snippet dateadd "gen-dateadd"
+dateAdd(${1:"${2:datepart}", ${3:number}, ${4:date}})
+endsnippet
+
+snippet datecompare "gen-datecompare"
+dateCompare(${1:${2:date1}, ${3:date2}${4:, [datePart]}})
+endsnippet
+
+snippet dateconvert "gen-dateconvert"
+dateConvert(${1:"${2:type}", ${3:date}})
+endsnippet
+
+snippet datediff "gen-datediff"
+dateDiff(${1:"${2:datepart}", ${3:date1}, ${4:date2}})
+endsnippet
+
+snippet dateformat "gen-dateformat"
+dateFormat(${1:${2:date}${3:, [mask]}})
+endsnippet
+
+snippet datepart "gen-datepart"
+datePart(${1:"${2:datepart}", ${3:date}})
+endsnippet
+
+snippet day "gen-day"
+day(${1:${2:date}})
+endsnippet
+
+snippet dayofweek "gen-dayofweek"
+dayOfWeek(${1:${2:date}})
+endsnippet
+
+snippet dayofweekasstring "gen-dayofweekasstring"
+dayOfWeekAsString(${1:${2:day_of_week}})
+endsnippet
+
+snippet dayofyear "gen-dayofyear"
+dayOfYear(${1:${2:date}})
+endsnippet
+
+snippet daysinmonth "gen-daysinmonth"
+daysinmonth(${1:${2:date}})
+endsnippet
+
+snippet daysinyear "gen-daysinyear"
+daysinyear(${1:${2:date}})
+endsnippet
+
+snippet de "gen-de"
+de(${1:"${2:string}"})
+endsnippet
+
+snippet decimalformat "gen-decimalformat"
+decimalFormat(${1:${2:number}})
+endsnippet
+
+snippet decrementvalue "gen-decrementvalue"
+decrementvalue(${1:${2:number}})
+endsnippet
+
+snippet decrypt "gen-decrypt"
+decrypt(${1:"${2:encrypted_string}", "${3:seed}"})
+endsnippet
+
+snippet deleteclientvariable "gen-deleteclientvariable"
+deleteclientvariable(${1:"${2:name}"})
+endsnippet
+
+snippet directoryexists "gen-directoryexists"
+directoryExists(${1:"${2:absolute_path}"})
+endsnippet
+
+snippet dollarformat "gen-dollarformat"
+dollarFormat(${1:${2:number}})
+endsnippet
+
+snippet duplicate "gen-duplicate"
+duplicate(${1:${2:variable}})
+endsnippet
+
+snippet encrypt "gen-encrypt"
+encrypt(${1:"${2:string}", "${3:key}"${4:, [algorithm]}${5:, [encoding]}})
+endsnippet
+
+snippet evaluate "gen-evaluate"
+evaluate(${1:"${2:expression1}"${3:, [expression2]}${4:, [expressionN]}})
+endsnippet
+
+snippet exp "gen-exp"
+exp(${1:${2:number}})
+endsnippet
+
+snippet expandpath "gen-expandpath"
+expandpath(${1:"${2:relative_path}"})
+endsnippet
+
+snippet fileexists "gen-fileexists"
+fileExists(${1:"${2:path}"})
+endsnippet
+
+snippet find "gen-find"
+find(${1:"${2:substring}", "${3:string}"${4:, [start]}})
+endsnippet
+
+snippet findnocase "gen-findnocase"
+findNoCase(${1:"${2:substring}", "${3:string}"${4:, [start]}})
+endsnippet
+
+snippet findoneof "gen-findoneof"
+findOneOf(${1:"${2:set}", "${3:string}"${4:, [start]}})
+endsnippet
+
+snippet firstdayofmonth "gen-firstdayofmonth"
+firstDayOfMonth(${1:${2:date}})
+endsnippet
+
+snippet fix "gen-fix"
+fix(${1:${2:number}})
+endsnippet
+
+snippet formatbasen "gen-formatbasen"
+formatbasen(${1:${2:number}, ${3:radix}})
+endsnippet
+
+snippet generatesecretkey "gen-generatesecretkey"
+generatesecretkey(${1:${2:[algorithm]}})
+endsnippet
+
+snippet getauthuser "gen-getauthuser"
+getauthuser(${1:})
+endsnippet
+
+snippet getbasetagdata "gen-getbasetagdata"
+getbasetagdata(${1:"${2:tagname}"${3:, [instancenumber]}})
+endsnippet
+
+snippet getbasetaglist "gen-getbasetaglist"
+getbasetaglist(${1:})
+endsnippet
+
+snippet getbasetemplatepath "gen-getbasetemplatepath"
+getbasetemplatepath(${1:})
+endsnippet
+
+snippet getclientvariableslist "gen-getclientvariableslist"
+getclientvariableslist(${1:})
+endsnippet
+
+snippet getcontextroot "gen-getcontextroot"
+getcontextroot(${1:})
+endsnippet
+
+snippet getcurrenttemplatepath "gen-getcurrenttemplatepath"
+getCurrentTemplatePath(${1:})
+endsnippet
+
+snippet getdirectoryfrompath "gen-getdirectoryfrompath"
+getDirectoryFromPath(${1:"${2:path}"})
+endsnippet
+
+snippet getencoding "gen-getencoding"
+getencoding(${1:"${2:scope_name}"})
+endsnippet
+
+snippet getexception "gen-getexception"
+getexception(${1:${2:javaobject}})
+endsnippet
+
+snippet getfilefrompath "gen-getfilefrompath"
+getFileFromPath(${1:"${2:path}"})
+endsnippet
+
+snippet getfunctionlist "gen-getfunctionlist"
+getfunctionlist(${1:})
+endsnippet
+
+snippet getgatewayhelper "gen-getgatewayhelper"
+getgatewayhelper(${1:"${2:gatewayID}"})
+endsnippet
+
+snippet gethttprequestdata "gen-gethttprequestdata"
+gethttprequestdata(${1:})
+endsnippet
+
+snippet gethttptimestring "gen-gethttptimestring"
+gethttptimestring(${1:${2:datetime}})
+endsnippet
+
+snippet getk2serverdoccount "gen-getk2serverdoccount"
+getk2serverdoccount(${1:})
+endsnippet
+
+snippet getk2serverdoccountlimit "gen-getk2serverdoccountlimit"
+getk2serverdoccountlimit(${1:})
+endsnippet
+
+snippet getlocale "gen-getlocale"
+getlocale(${1:})
+endsnippet
+
+snippet getlocaledisplayname "gen-getlocaledisplayname"
+getlocaledisplayname(${1:})
+endsnippet
+
+snippet getmetadata "gen-getmetadata"
+getMetaData(${1:${2:object}})
+endsnippet
+
+snippet getmetricdata "gen-getmetricdata"
+getmetricdata(${1:"${2:mode}"})
+endsnippet
+
+snippet getpagecontext "gen-getpagecontext"
+getpagecontext(${1:})
+endsnippet
+
+snippet getprofilesections "gen-getprofilesections"
+getprofilesections(${1:"${2:inifile}"})
+endsnippet
+
+snippet getprofilestring "gen-getprofilestring"
+getprofilestring(${1:"${2:inipath}", "${3:section}", "${4:entry}"})
+endsnippet
+
+snippet getsoaprequest "gen-getsoaprequest"
+getsoaprequest(${1:})
+endsnippet
+
+snippet getsoaprequestheader "gen-getsoaprequestheader"
+getsoaprequestheader(${1:"${2:namespace}", "${3:name}"${4:, [asXML]}})
+endsnippet
+
+snippet getsoapresponse "gen-getsoapresponse"
+getsoapresponse(${1:"${2:webservice}"})
+endsnippet
+
+snippet getsoapresponseheader "gen-getsoapresponseheader"
+getsoapresponseheader(${1:${2:webservice}, "${3:namespace}", "${4:name}"${5:, [asXML]}})
+endsnippet
+
+snippet gettempdirectory "gen-gettempdirectory"
+gettempdirectory(${1:})
+endsnippet
+
+snippet gettempfile "gen-gettempfile"
+gettempfile(${1:"${2:dir}", "${3:prefix}"})
+endsnippet
+
+snippet gettemplatepath "gen-gettemplatepath"
+getTemplatePath(${1:})
+endsnippet
+
+snippet gettickcount "gen-gettickcount"
+getTickCount(${1:})
+endsnippet
+
+snippet gettimezoneinfo "gen-gettimezoneinfo"
+gettimezoneinfo(${1:"${2:text}"})
+endsnippet
+
+snippet gettoken "gen-gettoken"
+getToken(${1:"${2:string}", ${3:index}${4:, [delimiters]}})
+endsnippet
+
+snippet hash "gen-hash"
+hash(${1:"${2:string}"${3:, [algorithm]}${4:, [encoding]}})
+endsnippet
+
+snippet hour "gen-hour"
+hour(${1:${2:date}})
+endsnippet
+
+snippet htmlcodeformat "gen-htmlcodeformat"
+htmlCodeFormat(${1:"${2:string}"${3:, [version]}})
+endsnippet
+
+snippet htmleditformat "gen-htmleditformat"
+htmlEditFormat(${1:"${2:string}"${3:, [version]}})
+endsnippet
+
+snippet iif "gen-iif"
+iif(${1:${2:condition}, "${3:expression1}", "${4:expression2}"})
+endsnippet
+
+snippet incrementvalue "gen-incrementvalue"
+incrementvalue(${1:${2:number}})
+endsnippet
+
+snippet inputbasen "gen-inputbasen"
+inputbasen(${1:"${2:string}", "${3:radix}"})
+endsnippet
+
+snippet insert "gen-insert"
+insert(${1:"${2:substring}", "${3:string}", ${4:position}})
+endsnippet
+
+snippet int "gen-int"
+int(${1:${2:number}})
+endsnippet
+
+snippet isarray "gen-isarray"
+isArray(${1:${2:value}${3:, [number]}})
+endsnippet
+
+snippet isbinary "gen-isbinary"
+isBinary(${1:${2:value}})
+endsnippet
+
+snippet isboolean "gen-isboolean"
+isBoolean(${1:${2:value}})
+endsnippet
+
+snippet iscustomfunction "gen-iscustomfunction"
+iscustomfunction(${1:${2:object}})
+endsnippet
+
+snippet isdate "gen-isdate"
+isDate(${1:${2:object}})
+endsnippet
+
+snippet isdebugmode "gen-isdebugmode"
+isdebugmode(${1:})
+endsnippet
+
+snippet isdefined "gen-isdefined"
+isDefined(${1:"${2:variable_name}"})
+endsnippet
+
+snippet isk2serverabroker "gen-isk2serverabroker"
+isk2serverabroker(${1:})
+endsnippet
+
+snippet isk2serverdoccountexceeded "gen-isk2serverdoccountexceeded"
+isk2serverdoccountexceeded(${1:})
+endsnippet
+
+snippet isk2serveronline "gen-isk2serveronline"
+isk2serveronline(${1:})
+endsnippet
+
+snippet isleapyear "gen-isleapyear"
+isleapyear(${1:${2:year}})
+endsnippet
+
+snippet isnumeric "gen-isnumeric"
+isNumeric(${1:"${2:string}"})
+endsnippet
+
+snippet isnumericdate "gen-isnumericdate"
+isNumericDate(${1:${2:number}})
+endsnippet
+
+snippet isobject "gen-isobject"
+isObject(${1:${2:value}})
+endsnippet
+
+snippet isquery "gen-isquery"
+isQuery(${1:"${2:value}"})
+endsnippet
+
+snippet issimplevalue "gen-issimplevalue"
+isSimpleValue(${1:${2:value}})
+endsnippet
+
+snippet issoaprequest "gen-issoaprequest"
+issoaprequest(${1:})
+endsnippet
+
+snippet isstruct "gen-isstruct"
+isStruct(${1:${2:variable}})
+endsnippet
+
+snippet isuserinrole "gen-isuserinrole"
+isuserinrole(${1:"${2:role_name}"})
+endsnippet
+
+snippet isvalid "gen-isvalid"
+isValid(${1:"${2:type}", ${3:value}, ${4:min}, ${5:max}, "${6:pattern}"})
+endsnippet
+
+snippet iswddx "gen-iswddx"
+isWDDX(${1:${2:value}})
+endsnippet
+
+snippet isxml "gen-isxml"
+isXML(${1:"${2:value}"})
+endsnippet
+
+snippet isxmlattribute "gen-isxmlattribute"
+isxmlattribute(${1:${2:value}})
+endsnippet
+
+snippet isxmldoc "gen-isxmldoc"
+isxmldoc(${1:${2:value}})
+endsnippet
+
+snippet isxmlelem "gen-isxmlelem"
+isxmlelem(${1:${2:value}})
+endsnippet
+
+snippet isxmlnode "gen-isxmlnode"
+isxmlnode(${1:${2:value}})
+endsnippet
+
+snippet isxmlroot "gen-isxmlroot"
+isxmlroot(${1:${2:value}})
+endsnippet
+
+snippet javacast "gen-javacast"
+javacast(${1:"${2:type}", "${3:variable}"})
+endsnippet
+
+snippet jsstringformat "gen-jsstringformat"
+jsStringFormat(${1:"${2:string}"})
+endsnippet
+
+snippet lcase "gen-lcase"
+lcase(${1:"${2:string}"})
+endsnippet
+
+snippet left "gen-left"
+left(${1:"${2:string}", ${3:count}})
+endsnippet
+
+snippet len "gen-len"
+len(${1:${2:object}})
+endsnippet
+
+snippet listappend "gen-listappend"
+listAppend(${1:"${2:list}", "${3:value}"${4:, [delimiters]}})
+endsnippet
+
+snippet listchangedelims "gen-listchangedelims"
+listChangeDelims(${1:"${2:list}", "${3:new_delimiter}"${4:, [delimiters]}})
+endsnippet
+
+snippet listcontains "gen-listcontains"
+listContains(${1:"${2:list}", "${3:substring}"${4:, [delimiters]}})
+endsnippet
+
+snippet listcontainsnocase "gen-listcontainsnocase"
+listContainsNoCase(${1:"${2:list}", "${3:substring}"${4:, [delimiters]}})
+endsnippet
+
+snippet listdeleteat "gen-listdeleteat"
+listDeleteAt(${1:"${2:list}", ${3:position}${4:, [delimiters]}})
+endsnippet
+
+snippet listfind "gen-listfind"
+listFind(${1:"${2:list}", "${3:value}"${4:, [delimiters]}})
+endsnippet
+
+snippet listfindnocase "gen-listfindnocase"
+listFindNoCase(${1:"${2:list}", "${3:value}"${4:, [delimiters]}})
+endsnippet
+
+snippet listfirst "gen-listfirst"
+listFirst(${1:"${2:list}"${3:, [delimiters]}})
+endsnippet
+
+snippet listgetat "gen-listgetat"
+listGetAt(${1:"${2:list}", ${3:position}${4:, [delimiters]}})
+endsnippet
+
+snippet listinsertat "gen-listinsertat"
+listInsertAt(${1:"${2:list}", ${3:position}, "${4:value}"${5:, [delimiters]}})
+endsnippet
+
+snippet listlast "gen-listlast"
+listLast(${1:"${2:list}"${3:, [delimiters]}})
+endsnippet
+
+snippet listlen "gen-listlen"
+listLen(${1:"${2:list}"${3:, [delimiters]}})
+endsnippet
+
+snippet listprepend "gen-listprepend"
+listPrepend(${1:"${2:list}", "${3:value}"${4:, [delimiters]}})
+endsnippet
+
+snippet listqualify "gen-listqualify"
+listQualify(${1:"${2:list}", "${3:qualifier}"${4:, [delimiters]}${5:, [elements]}})
+endsnippet
+
+snippet listrest "gen-listrest"
+listRest(${1:"${2:list}"${3:, [delimiters]}})
+endsnippet
+
+snippet listsetat "gen-listsetat"
+listSetAt(${1:"${2:list}", ${3:position}, "${4:value}"${5:, [delimiters]}})
+endsnippet
+
+snippet listsort "gen-listsort"
+listSort(${1:"${2:list}", "${3:sort_type}"${4:, [sort_order]}${5:, [delimiters]}})
+endsnippet
+
+snippet listtoarray "gen-listtoarray"
+listToArray(${1:"${2:list}"${3:, [delimiters]}})
+endsnippet
+
+snippet listvaluecount "gen-listvaluecount"
+listValueCount(${1:"${2:list}", "${3:value}"${4:, [delimiters]}})
+endsnippet
+
+snippet listvaluecountnocase "gen-listvaluecountnocase"
+listvaluecountnocase(${1:"${2:list}", "${3:value}"${4:, [delimiters]}})
+endsnippet
+
+snippet ljustify "gen-ljustify"
+ljustify(${1:"${2:string}", ${3:length}})
+endsnippet
+
+snippet log "gen-log"
+log(${1:${2:number}})
+endsnippet
+
+snippet log10 "gen-log10"
+log10(${1:${2:number}})
+endsnippet
+
+snippet lscurrencyformat "gen-lscurrencyformat"
+lscurrencyformat(${1:${2:number}${3:, [type]}})
+endsnippet
+
+snippet lsdateformat "gen-lsdateformat"
+lsdateformat(${1:${2:date}${3:, [mask]}})
+endsnippet
+
+snippet lseurocurrencyformat "gen-lseurocurrencyformat"
+lseurocurrencyformat(${1:"${2:currency}", "${3:type}"})
+endsnippet
+
+snippet lsiscurrency "gen-lsiscurrency"
+lsiscurrency(${1:"${2:string}"})
+endsnippet
+
+snippet lsisdate "gen-lsisdate"
+lsisdate(${1:"${2:string}"})
+endsnippet
+
+snippet lsisnumeric "gen-lsisnumeric"
+lsisnumeric(${1:"${2:string}"})
+endsnippet
+
+snippet lsnumberformat "gen-lsnumberformat"
+lsnumberformat(${1:${2:number}${3:, [mask]}})
+endsnippet
+
+snippet lsparsecurrency "gen-lsparsecurrency"
+lsparsecurrency(${1:"${2:string}"})
+endsnippet
+
+snippet lsparsedatetime "gen-lsparsedatetime"
+lsparsedatetime(${1:"${2:dt_string}"})
+endsnippet
+
+snippet lsparseeurocurrency "gen-lsparseeurocurrency"
+lsparseeurocurrency(${1:"${2:currency_string}"})
+endsnippet
+
+snippet lsparsenumber "gen-lsparsenumber"
+lsparsenumber(${1:"${2:string}"})
+endsnippet
+
+snippet lstimeformat "gen-lstimeformat"
+lstimeformat(${1:${2:time}${3:, [mask]}})
+endsnippet
+
+snippet ltrim "gen-ltrim"
+ltrim(${1:"${2:string}"})
+endsnippet
+
+snippet max "gen-max"
+max(${1:${2:number1}, ${3:number2}})
+endsnippet
+
+snippet mid "gen-mid"
+mid(${1:"${2:string}", ${3:start}, ${4:count}})
+endsnippet
+
+snippet min "gen-min"
+min(${1:${2:number1}, ${3:number2}})
+endsnippet
+
+snippet minute "gen-minute"
+minute(${1:${2:date}})
+endsnippet
+
+snippet month "gen-month"
+month(${1:${2:date}})
+endsnippet
+
+snippet monthasstring "gen-monthasstring"
+monthAsString(${1:${2:month_number}})
+endsnippet
+
+snippet now "gen-now"
+now(${1:})
+endsnippet
+
+snippet numberformat "gen-numberformat"
+numberFormat(${1:${2:number}${3:, [mask]}})
+endsnippet
+
+snippet paragraphformat "gen-paragraphformat"
+paragraphFormat(${1:"${2:string}"})
+endsnippet
+
+snippet parsedatetime "gen-parsedatetime"
+parseDateTime(${1:"${2:dt_string}"${3:, [pop_conversion]}})
+endsnippet
+
+snippet pi "gen-pi"
+pi(${1:})
+endsnippet
+
+snippet preservesinglequotes "gen-preservesinglequotes"
+preserveSingleQuotes(${1:"${2:variable}"})
+endsnippet
+
+snippet quarter "gen-quarter"
+quarter(${1:${2:date}})
+endsnippet
+
+snippet queryaddcolumn "gen-queryaddcolumn"
+queryAddColumn(${1:${2:query}, "${3:column-name}"${4:, [datatype]}, ${5:array-name}})
+endsnippet
+
+snippet queryaddrow "gen-queryaddrow"
+queryAddRow(${1:${2:query}${3:, [number]}})
+endsnippet
+
+snippet querynew "gen-querynew"
+queryNew(${1:"${2:columnlist}"${3:, [columntypelist]}})
+endsnippet
+
+snippet querysetcell "gen-querysetcell"
+querySetCell(${1:${2:query}, "${3:column_name}", ${4:value}${5:, [row_number]}})
+endsnippet
+
+snippet quotedvaluelist "gen-quotedvaluelist"
+quotedValueList(${1:${2:column}${3:, [delimiter]}})
+endsnippet
+
+snippet rand "gen-rand"
+rand(${1:${2:[algorithm]}})
+endsnippet
+
+snippet randomize "gen-randomize"
+randomize(${1:${2:number}${3:, [algorithm]}})
+endsnippet
+
+snippet randrange "gen-randrange"
+randRange(${1:${2:number1}, ${3:number2}${4:, [algorithm]}})
+endsnippet
+
+snippet refind "gen-refind"
+reRind(${1:${2:reg_expression}, "${3:string}"${4:, [start]}${5:, [returnsubexpressions]}})
+endsnippet
+
+snippet refindnocase "gen-refindnocase"
+reFindNoCase(${1:${2:reg_expression}, "${3:string}"${4:, [start]}${5:, [returnsubexpressions]}})
+endsnippet
+
+snippet releasecomobject "gen-releasecomobject"
+releasecomobject(${1:${2:objectName}})
+endsnippet
+
+snippet removechars "gen-removechars"
+removeChars(${1:"${2:string}", ${3:start}, ${4:count}})
+endsnippet
+
+snippet repeatstring "gen-repeatstring"
+repeatString(${1:"${2:string}", ${3:count}})
+endsnippet
+
+snippet replace "gen-replace"
+replace(${1:"${2:string}", "${3:substring1}", "${4:substring2}"${5:, [scope]}})
+endsnippet
+
+snippet replacelist "gen-replacelist"
+replaceList(${1:"${2:string}", "${3:list1}", "${4:list2}"})
+endsnippet
+
+snippet replacenocase "gen-replacenocase"
+replaceNoCase(${1:"${2:string}", "${3:substring1}", "${4:substring2}"${5:, [scope]}})
+endsnippet
+
+snippet rereplace "gen-rereplace"
+reReplace(${1:"${2:string}", ${3:reg_expression}, "${4:substring}"${5:, [scope]}})
+endsnippet
+
+snippet rereplacenocase "gen-rereplacenocase"
+reReplaceNoCase(${1:"${2:string}", ${3:reg_expression}, "${4:substring}"${5:, [scope]}})
+endsnippet
+
+snippet reverse "gen-reverse"
+reverse(${1:"${2:string}"})
+endsnippet
+
+snippet right "gen-right"
+right(${1:"${2:string}", ${3:count}})
+endsnippet
+
+snippet rjustify "gen-rjustify"
+rjustify(${1:"${2:string}", ${3:length}})
+endsnippet
+
+snippet round "gen-round"
+round(${1:${2:number}})
+endsnippet
+
+snippet rtrim "gen-rtrim"
+rtrim(${1:"${2:string}"})
+endsnippet
+
+snippet second "gen-second"
+second(${1:${2:date}})
+endsnippet
+
+snippet sendgatewaymessage "gen-sendgatewaymessage"
+sendgatewaymessage(${1:"${2:gatewayID}", ${3:data}})
+endsnippet
+
+snippet setencoding "gen-setencoding"
+setencoding(${1:"${2:scope_name}", "${3:charset}"})
+endsnippet
+
+snippet setlocale "gen-setlocale"
+setlocale(${1:"${2:new_locale}"})
+endsnippet
+
+snippet setprofilestring "gen-setprofilestring"
+setprofilestring(${1:"${2:inipath}", "${3:section}", "${4:entry}", "${5:value}"})
+endsnippet
+
+snippet setvariable "gen-setvariable"
+setvariable(${1:"${2:name}", "${3:value}"})
+endsnippet
+
+snippet sgn "gen-sgn"
+sgn(${1:${2:number}})
+endsnippet
+
+snippet sin "gen-sin"
+sin(${1:${2:number}})
+endsnippet
+
+snippet spanexcluding "gen-spanexcluding"
+spanexcluding(${1:"${2:string}", "${3:set}"})
+endsnippet
+
+snippet spanincluding "gen-spanincluding"
+spanincluding(${1:"${2:string}", "${3:set}"})
+endsnippet
+
+snippet sqr "gen-sqr"
+sqr(${1:${2:number}})
+endsnippet
+
+snippet stripcr "gen-stripcr"
+stripcr(${1:"${2:string}"})
+endsnippet
+
+snippet structappend "gen-structappend"
+structAppend(${1:${2:struct1}, ${3:struct2}${4:, [overwriteFlag]}})
+endsnippet
+
+snippet structclear "gen-structclear"
+structclear(${1:${2:structure}})
+endsnippet
+
+snippet structcopy "gen-structcopy"
+structCopy(${1:${2:structure}})
+endsnippet
+
+snippet structcount "gen-structcount"
+structCount(${1:${2:structure}})
+endsnippet
+
+snippet structdelete "gen-structdelete"
+structDelete(${1:"${2:structure}", "${3:key}"${4:, [indicatenotexisting]}})
+endsnippet
+
+snippet structfind "gen-structfind"
+structFind(${1:${2:structure}, "${3:key}"})
+endsnippet
+
+snippet structfindkey "gen-structfindkey"
+structFindKey(${1:${2:top}, "${3:value}", "${4:scope}"})
+endsnippet
+
+snippet structfindvalue "gen-structfindvalue"
+structFindValue(${1:${2:top}, "${3:value}"${4:, [scop]}})
+endsnippet
+
+snippet structget "gen-structget"
+structGet(${1:"${2:pathdesired}"})
+endsnippet
+
+snippet structinsert "gen-structinsert"
+structInsert(${1:${2:structure}, "${3:key}", ${4:value}${5:, [allowoverwrite]}})
+endsnippet
+
+snippet structisempty "gen-structisempty"
+structIsEmpty(${1:${2:structure}})
+endsnippet
+
+snippet structkeyarray "gen-structkeyarray"
+structKeyArray(${1:${2:structure}})
+endsnippet
+
+snippet structkeyexists "gen-structkeyexists"
+structKeyExists(${1:${2:structure}, "${3:key}"})
+endsnippet
+
+snippet structkeylist "gen-structkeylist"
+structKeyList(${1:${2:structure}${3:, [delimiter]}})
+endsnippet
+
+snippet structnew "gen-structnew"
+structNew(${1:})
+endsnippet
+
+snippet structsort "gen-structsort"
+structSort(${1:${2:base}, "${3:sorttype}", "${4:sortorder}", "${5:pathtosubelement}"})
+endsnippet
+
+snippet structupdate "gen-structupdate"
+structUpdate(${1:${2:structure}, "${3:key}", ${4:value}})
+endsnippet
+
+snippet tan "gen-tan"
+tan(${1:${2:number}})
+endsnippet
+
+snippet timeformat "gen-timeformat"
+timeFormat(${1:${2:time}${3:, [mask]}})
+endsnippet
+
+snippet tobase64 "gen-tobase64"
+toBase64(${1:${2:string_or_object}${3:, [encoding]}})
+endsnippet
+
+snippet tobinary "gen-tobinary"
+toBinary(${1:${2:base64_or_object}})
+endsnippet
+
+snippet toscript "gen-toscript"
+toScript(${1:${2:cfvar}, "${3:javascriptvar}"${4:, [outputformat]}${5:, [ASFormat]}})
+endsnippet
+
+snippet tostring "gen-tostring"
+toString(${1:${2:any_value}${3:, [encoding]}})
+endsnippet
+
+snippet trim "gen-trim"
+trim(${1:"${2:string}"})
+endsnippet
+
+snippet ucase "gen-ucase"
+ucase(${1:"${2:string}"})
+endsnippet
+
+snippet urldecode "gen-urldecode"
+urlDecode(${1:"${2:urlencodedstring}"${3:, [charset]}})
+endsnippet
+
+snippet urlencodedformat "gen-urlencodedformat"
+urlEncodedFormat(${1:"${2:string}"${3:, [charset]}})
+endsnippet
+
+snippet urlsessionformat "gen-urlsessionformat"
+urlSessionFormat(${1:${2:requesturl}})
+endsnippet
+
+snippet val "gen-val"
+val(${1:"${2:string}"})
+endsnippet
+
+snippet valuelist "gen-valuelist"
+valuelist(${1:${2:column}${3:, [delimiter]}})
+endsnippet
+
+snippet week "gen-week"
+week(${1:${2:date}})
+endsnippet
+
+snippet wrap "gen-wrap"
+wrap(${1:"${2:string}", ${3:limit}${4:, [strip]}})
+endsnippet
+
+snippet writeoutput "gen-writeoutput"
+writeOutput(${1:"${2:string}"})
+endsnippet
+
+snippet xmlchildpos "gen-xmlchildpos"
+xmlChildPos(${1:${2:elem}, "${3:childname}", ${4:n}})
+endsnippet
+
+snippet xmlelemnew "gen-xmlelemnew"
+xmlelemnew(${1:${2:xmlobj}${3:, [namespace]}, "${4:childname}"})
+endsnippet
+
+snippet xmlformat "gen-xmlformat"
+xmlFormat(${1:"${2:string}"})
+endsnippet
+
+snippet xmlgetnodetype "gen-xmlgetnodetype"
+xmlGetNodeType(${1:${2:xmlNode}})
+endsnippet
+
+snippet xmlnew "gen-xmlnew"
+xmlNew(${1:${2:[casesensitive]}})
+endsnippet
+
+snippet xmlparse "gen-xmlparse"
+xmlParse(${1:"${2:xmlstring}"${3:, [casesensitive]}${4:, [validator]}})
+endsnippet
+
+snippet xmlsearch "gen-xmlsearch"
+xmlSearch(${1:${2:xmldoc}, "${3:xpathstring}"})
+endsnippet
+
+snippet xmltransform "gen-xmltransform"
+xmlTransform(${1:"${2:xml}", "${3:xsl}"${4:, [parameters]}})
+endsnippet
+
+snippet xmlvalidate "gen-xmlvalidate"
+xmlValidate(${1:${2:xmlDoc}${3:, [validator]}})
+endsnippet
+
+snippet year "gen-year"
+year(${1:${2:date}})
+endsnippet
+
+snippet yesnoformat "gen-yesnoformat"
+yesNoFormat(${1:${2:value}})
+endsnippet
+
+snippet abort "x_abort"
+<cfabort />$0
+endsnippet
+
